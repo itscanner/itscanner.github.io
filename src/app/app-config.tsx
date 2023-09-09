@@ -92,7 +92,7 @@ export const PROJECTS: Project[] = [
     new Project(
         'Personal Peripherals',
         '',
-        './images/project-2-peek.jpg',
+        './images/project-1-peek.jpg',
         [
             VIA_TOOL,
             ELECTRONIC_DESIGN_TOOL,
@@ -117,7 +117,7 @@ export const PROJECTS: Project[] = [
     new Project(
         'momBot', 
         'https://github.com/itscanner/momBot', 
-        './images/project-1-peek.jpg',
+        './images/project-3-peek.jpg',
         [
             JAVA_TOOL,
             OBJECT_ORIENTED_TOOL,
