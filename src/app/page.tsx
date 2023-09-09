@@ -17,22 +17,30 @@ export default function Home() {
   const [currentSection, setCurrentSection] = useState('')
 
   useEffect(() => {
+    // update mobile status
     setIsMobile(isMobileCheck())
+
+    // add a scroll listener and then apply ambient-occlusion to pointer
     document.addEventListener('scroll', () => {
       setIsPageScrolled(global.scrollY > 0)
       const pointer: HTMLElement = document.querySelector('.ambient-occlusion') as HTMLElement;
       pointer.style.top = (mousePositionY + scrollY) + 'px'
     })
+
+    // add a resize listener to update mobile status
     window.addEventListener('resize', () => {
       setIsMobile(isMobileCheck())
     })
 
+    // when the mouse is moved then we change the positioning of the background light
     document.addEventListener('mousemove', (event) => {
       const pointer: HTMLElement = document.querySelector('.ambient-occlusion') as HTMLElement;
       pointer.style.left = event.clientX + 'px'
       mousePositionY = event.clientY
       pointer.style.top = (event.clientY + global.scrollY) + 'px'
     });
+
+    // setting up an intersection observer
     let about_checkpoints = [].slice.call(document.getElementsByClassName('about-checkpoint'))
     let experience_checkpoints = [].slice.call(document.getElementsByClassName('experience-checkpoint'))
     let projects_checkpoints = [].slice.call(document.getElementsByClassName('projects-checkpoint'))
