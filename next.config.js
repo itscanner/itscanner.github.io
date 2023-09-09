@@ -14,6 +14,10 @@ if (isGithubActions) {
   basePath = `/${repo}`
 }
 
+const nextConfig = {
+    output: 'export'
+}
+
 module.exports = {
   assetPrefix: assetPrefix,
   basePath: basePath,
