@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 // next.config.js
-
-
 const isGithubActions = process.env.GITHUB_ACTIONS || false
 
 let assetPrefix = ''
