@@ -84,7 +84,7 @@ export default function Home() {
               :
               <p className={`text-xl font-semibold ${isMobile ? '' : 'pt-4'}`}>{EMPLOYMENT_TAG_LINE}</p>
             }
-            <p className={`indent-6 font-thin text-tertiary/50 ${isMobile ? 'text-sm' : 'text-lg pt-8'}`}>{BLURB_1}</p>
+            <p className={`font-thin text-tertiary/50 ${isMobile ? 'text-sm' : 'text-lg pt-8'}`}>{BLURB_1}</p>
             <div className={`${isMobile ? 'flex flex-row justify-between' : 'pt-16'}`}>
               {
                 navigationHtml(currentSection, setCurrentSection)
