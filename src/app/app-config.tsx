@@ -65,7 +65,7 @@ export const OBJECT_ORIENTED_TOOL = new Tool('object oriented', 'https://www.jav
 // ########################################################
 export const EXPERIENCE: Experience[] = [
     new Experience(
-        'Software Engineer - Direct Supply',
+        'Software Engineer Intern - Direct Supply',
         'https://www.directsupply.com',
         'March 2023',
         'Present',
