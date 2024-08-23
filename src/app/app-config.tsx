@@ -13,7 +13,7 @@ export const EMPLOYMENT_TAG_LINE =  'Software Engineer Intern at Direct Supply'
 export const GITHUB_URL = 'https://github.com/itscanner'
 export const LINKED_IN_URL = 'https://www.linkedin.com/in/connor-nagela'
 export const EMPLOYER_WEBSITE_URL = 'https://www.directsupply.com/' 
-export const BLURB_1 = 'Junior B.S. Computer Engineering, NCAA D3 Student-Athlete'
+export const BLURB_1 = 'Senior B.S. Computer Engineering, NCAA D3 Student-Athlete'
 export const BIO: string[] = [
     'I began my journey into computers in high school, where I had an aptitude for problem solving. During COVID, I decided to delve further into hardware which led me to pursue a degree in Computer Engineering',
     'Currently I am working at Direct Supply as a Software Engineer Intern. I am working on DS Smart, a team that is developing a multi-platform medical device application. We help our customers increase the efficiency of their workflows.',
